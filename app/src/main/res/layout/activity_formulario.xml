@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FAF6"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de inscripción"
+            android:textColor="#1B8A5A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName|textCapWords" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Ciudad"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Rango de ingresos mensuales"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgIngresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbIngresoBajo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menos de 1 salario mínimo" />
+
+            <RadioButton
+                android:id="@+id/rbIngresoMedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entre 1 y 2 salarios mínimos" />
+
+            <RadioButton
+                android:id="@+id/rbIngresoAlto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Más de 2 salarios mínimos" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Temas de interés"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbAhorro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahorro" />
+
+        <CheckBox
+            android:id="@+id/cbCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crédito responsable" />
+
+        <CheckBox
+            android:id="@+id/cbInversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inversión" />
+
+        <Button
+            android:id="@+id/btnInscribirme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Inscribirme"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#7F8C8D"
+            android:text="Limpiar formulario" />
+
+    </LinearLayout>
+</ScrollView>
